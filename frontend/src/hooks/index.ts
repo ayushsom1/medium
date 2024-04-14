@@ -21,7 +21,7 @@ export const useBlogs = () => {
         axios.get(`${BACKEND_URL}/api/v1/blog/bulk`, {
             method: "GET",
             headers: {
-                "Authorization": "Bearer " + localStorage.getItem("userInfo")
+                "Authorization": localStorage.getItem("userInfo")
             }
         })
             .then(response => {
