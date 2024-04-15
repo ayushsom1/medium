@@ -25,7 +25,7 @@ export const useBlogs = () => {
             }
         })
             .then(response => {
-                setBlogs(response.data);
+                setBlogs(response.data.blogs);
                 setLoading(false);
             })
             .catch(error => {
@@ -53,7 +53,7 @@ export const useBlog = ({ id }: { id: string }) => {
             }
         })
             .then(response => {
-                setBlog(response.data);
+                setBlog(response.data.blog);
                 setLoading(false);
             })
             .catch(error => {
