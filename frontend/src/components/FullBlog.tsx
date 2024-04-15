@@ -1,9 +1,9 @@
-
 import { Blog } from "../hooks"
 
 import { Avatar } from "./BlogCard"
 
 export const FullBlog = ({ blog }: { blog: Blog }) => {
+    console.log(blog)
     return (
         <div>
             <div className="flex justify-center">
