@@ -27,7 +27,7 @@ export const Publish = () => {
                     }, {
                         method: "POST",
                         headers: {
-                            "Authorization": "Bearer " + localStorage.getItem("token")
+                            "Authorization": localStorage.getItem("token")
                         }
                     })
                     navigate(`/blog/${response.data.id}`)
